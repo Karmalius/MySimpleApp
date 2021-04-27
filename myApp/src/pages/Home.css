@@ -1,0 +1,20 @@
+.toolbar {
+    margin-bottom: 100px;
+    --background: #B15D98;
+    height: 25px;
+}
+
+.login {
+    --background: #B15D98;
+    margin: 3%;
+}
+
+.signup {
+    --background: #CC6BAF;
+    margin: 3%;
+}
+
+ion-thumbnail {
+    --size: 200px;
+    margin-left: 13%;
+}
