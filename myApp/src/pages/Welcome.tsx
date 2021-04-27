@@ -1,7 +1,7 @@
 import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonImg  } from '@ionic/react';
-import './Home.css';
+import './Welcome.css';
 
-const Home: React.FC = () => {
+const Welcome: React.FC = () => {
   return (
     <IonPage>
       <IonToolbar className="toolbar">
@@ -18,4 +18,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Welcome;
