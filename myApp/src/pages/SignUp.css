@@ -1,0 +1,24 @@
+.toolbar {
+    --background: #B15D98;
+    height: 25px;
+}
+
+.header {
+    height: 50px;
+    background-color: #B15D98;
+    padding: 5%;
+}
+
+.createnew {
+    --background: #B15D98;
+    margin: 3%;
+}
+
+ion-thumbnail {
+    --size: 200px;
+    margin-left: 13%;
+}
+
+ion-icon {
+    margin-right: 20px;
+}
