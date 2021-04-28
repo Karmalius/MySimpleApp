@@ -19,7 +19,7 @@ ion-img {
     margin-bottom: 5%;
 }
 
-ion-card {
+.bookCard {
     --background: #DF93C8;
     color: white;
 }
