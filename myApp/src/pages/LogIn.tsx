@@ -38,6 +38,7 @@ const LogIn: React.FC = () => {
     <IonAlert
           isOpen={showAlert}
           onDidDismiss={() => setShowAlert(false)}
+          cssClass='my-custom-class'
           header={'Log in failed!'}
           message={'Your login has failed. Check that your e-mail and password are correct. If you do not have an account, you must create one first.'}
           buttons={['Continue']}
@@ -45,6 +46,7 @@ const LogIn: React.FC = () => {
     <IonAlert
           isOpen={showAlert2}
           onDidDismiss={() => setShowAlert2(false)}
+          cssClass='my-custom-class'
           header={'Log in failed!'}
           message={'This feature is not in use.'}
           buttons={['Continue']}
