@@ -46,3 +46,8 @@ p {
     text-align: center;
     font-size: 12px;
 }
+
+.my-custom-class {
+    --max-width: 80%;
+    --background: #f8f1f7;
+}
