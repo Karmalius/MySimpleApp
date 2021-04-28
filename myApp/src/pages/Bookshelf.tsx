@@ -11,6 +11,7 @@ import {
 import "./Bookshelf.css";
 import { menuOutline } from "ionicons/icons";
 import { searchOutline } from "ionicons/icons";
+import { addCircle } from "ionicons/icons";
 
 const Bookshelf: React.FC = () => {
   return (
@@ -56,6 +57,7 @@ const Bookshelf: React.FC = () => {
             </IonLabel>
           </IonItem>
         </IonList>
+        <IonIcon icon={addCircle} className="add"></IonIcon>
       </IonContent>
     </IonPage>
   );
