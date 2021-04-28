@@ -29,8 +29,8 @@ const LogIn: React.FC = () => {
     <IonButton expand="full" className="login">Log in</IonButton>
     <p>OR</p>
     <IonButton expand="full" className="login"><IonIcon icon={logoFacebook}></IonIcon>Log in with Facebook</IonButton>
-    <IonButton expand="full" className="login"><IonIcon icon={logoTwitter}></IonIcon>Log in with Twitter</IonButton>
-    <IonButton expand="full" className="login"><IonIcon icon={logoGoogle}></IonIcon>Log in with Google</IonButton>
+    <IonButton expand="full" className="twitter"><IonIcon icon={logoTwitter}></IonIcon>Log in with Twitter</IonButton>
+    <IonButton expand="full" className="google"><IonIcon icon={logoGoogle}></IonIcon>Log in with Google</IonButton>
       </IonContent>
     </IonPage>
   );
