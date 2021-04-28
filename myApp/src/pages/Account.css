@@ -30,3 +30,19 @@ ion-avatar {
     margin-top: 10%;
     --background: #B15D98;
 }
+
+ion-checkbox {
+    --border-radius: 10px;
+    margin-left: 10%;
+    --checkmark-color: #B15D98;
+    --background-checked: #B15D98; 
+    --border-color-checked: grey; 
+}
+
+.color {
+    margin-left: 10px;
+}
+
+ion-row {
+    margin: 3%;
+}
