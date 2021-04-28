@@ -9,6 +9,11 @@ import {
     IonCardContent,
     IonButton,
     IonAvatar,
+    IonList,
+    IonItem,
+    IonLabel,
+    IonCheckbox,
+    IonRow,
 
 
   } from "@ionic/react";
@@ -16,7 +21,7 @@ import {
   import { menuOutline } from "ionicons/icons";
 
   
-  const Bookshelf: React.FC = () => {
+  const Account: React.FC = () => {
     return (
       <IonPage>
         <IonToolbar className="toolbar"></IonToolbar>
@@ -32,9 +37,37 @@ import {
           <IonButton size="small" className="addpicture">Add profile picture</IonButton>
       </IonCardContent>
           </IonCard>
+          <IonList lines="none">
+          <IonItem>
+            <IonLabel>
+              <h2>Name</h2>
+              <p>Example Name</p>
+            </IonLabel>
+          </IonItem>
+          <IonItem>
+            <IonLabel>
+              <h2>E-mail</h2>
+              <p>example@example.com</p>
+            </IonLabel>
+          </IonItem>
+          <IonItem>
+            <IonLabel>
+              <h2>App theme</h2>
+            </IonLabel>
+          </IonItem>
+          <IonRow>
+            <IonCheckbox checked/><IonLabel className="color">Purple</IonLabel>
+          </IonRow>
+          <IonRow>
+            <IonCheckbox/><IonLabel className="color">Green</IonLabel>
+          </IonRow>
+          <IonRow>
+            <IonCheckbox/><IonLabel className="color">Black</IonLabel>
+          </IonRow>
+        </IonList>
         </IonContent>
       </IonPage>
     );
   };
   
-  export default Bookshelf;
+  export default Account;
