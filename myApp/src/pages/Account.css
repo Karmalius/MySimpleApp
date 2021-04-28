@@ -1,0 +1,32 @@
+ion-icon {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.toolbar {
+    --background: #B15D98;
+    height: 25px;
+}
+
+.header {
+    height: 50px;
+    background-color: #B15D98;
+    padding: 5%;
+    color: white;
+    font-size: 15px;
+}
+
+.profile {
+    box-shadow: none;
+    border: none;
+}
+
+ion-avatar {
+    margin-left: 30%;
+}
+
+.addpicture {
+    margin-left: 5%;
+    margin-top: 10%;
+    --background: #B15D98;
+}
