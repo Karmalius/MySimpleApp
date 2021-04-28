@@ -1,0 +1,36 @@
+.login {
+    --background: #B15D98;
+    margin: 3%;
+    font-size: 10px;
+}
+
+.toolbar {
+    --background: #B15D98;
+    height: 25px;
+}
+
+.header {
+    height: 50px;
+    background-color: #B15D98;
+    padding: 5%;
+    color: white;
+    font-size: 15px;
+}
+
+ion-thumbnail {
+    --size: 200px;
+    margin-left: 13%;
+}
+
+ion-icon {
+    margin-right: 20px;
+}
+
+.input {
+    --padding-top: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+}
