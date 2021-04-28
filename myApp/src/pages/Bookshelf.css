@@ -1,0 +1,20 @@
+.toolbar {
+    --background: #B15D98;
+    height: 25px;
+}
+
+.header {
+    height: 50px;
+    background-color: #B15D98;
+    padding: 5%;
+    color: white;
+    font-size: 15px;
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+.search {
+    margin-left: 130px;
+}
