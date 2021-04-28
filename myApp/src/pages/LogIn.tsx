@@ -8,6 +8,7 @@ import React, {useState} from 'react';
 
 const LogIn: React.FC = () => {
     const [showAlert, setShowAlert] = useState(false);
+    const [showAlert2, setShowAlert2] = useState(false);
 
   return (
     <IonPage>
@@ -31,15 +32,21 @@ const LogIn: React.FC = () => {
     </IonThumbnail>
     <IonButton expand="block" className="login" onClick={() => setShowAlert(true)}>Log in</IonButton>
     <p>OR</p>
-    <IonButton expand="block" className="login" onClick={() => setShowAlert(true)}><IonIcon icon={logoFacebook}></IonIcon>Log in with Facebook</IonButton>
-    <IonButton expand="block" className="twitter" onClick={() => setShowAlert(true)}><IonIcon icon={logoTwitter}></IonIcon>Log in with Twitter</IonButton>
-    <IonButton expand="block" className="google" onClick={() => setShowAlert(true)}><IonIcon icon={logoGoogle}></IonIcon>Log in with Google</IonButton>
+    <IonButton expand="block" className="login" onClick={() => setShowAlert2(true)}><IonIcon icon={logoFacebook}></IonIcon>Log in with Facebook</IonButton>
+    <IonButton expand="block" className="twitter" onClick={() => setShowAlert2(true)}><IonIcon icon={logoTwitter}></IonIcon>Log in with Twitter</IonButton>
+    <IonButton expand="block" className="google" onClick={() => setShowAlert2(true)}><IonIcon icon={logoGoogle}></IonIcon>Log in with Google</IonButton>
     <IonAlert
           isOpen={showAlert}
           onDidDismiss={() => setShowAlert(false)}
-          cssClass='my-custom-class'
           header={'Log in failed!'}
           message={'Your login has failed. Check that your e-mail and password are correct. If you do not have an account, you must create one first.'}
+          buttons={['Continue']}
+        />
+    <IonAlert
+          isOpen={showAlert2}
+          onDidDismiss={() => setShowAlert2(false)}
+          header={'Log in failed!'}
+          message={'This feature is not in use.'}
           buttons={['Continue']}
         />
       </IonContent>
