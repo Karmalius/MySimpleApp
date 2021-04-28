@@ -11,7 +11,8 @@
 
 .createnew {
     --background: #B15D98;
-    margin: 3%;
+    margin: 10%;
+    margin-top: 30px;
 }
 
 ion-thumbnail {
@@ -21,4 +22,8 @@ ion-thumbnail {
 
 ion-icon {
     margin-right: 20px;
+}
+
+.input {
+    --padding-top: 50px;
 }
