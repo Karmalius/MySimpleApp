@@ -18,3 +18,8 @@ ion-icon {
 ion-img {
     margin-bottom: 5%;
 }
+
+ion-card {
+    --background: #DF93C8;
+    color: white;
+}
