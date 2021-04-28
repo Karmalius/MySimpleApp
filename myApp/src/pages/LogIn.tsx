@@ -1,4 +1,4 @@
-import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonHeader, IonIcon, IonList, IonItem, IonInput, IonAlert  } from '@ionic/react';
+import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonHeader, IonIcon, IonList, IonItem, IonInput, IonAlert, IonLabel  } from '@ionic/react';
 import './LogIn.css';
 import { arrowBack } from "ionicons/icons"
 import { logoFacebook } from "ionicons/icons"
@@ -20,10 +20,12 @@ const LogIn: React.FC = () => {
         <IonThumbnail>
         <IonList>
         <IonItem className="input">
-            <IonInput placeholder="E-mail"></IonInput>
+        <IonLabel position="stacked">E-mail</IonLabel>
+            <IonInput placeholder="Enter your e-mail here"> </IonInput>
           </IonItem>
           <IonItem>
-            <IonInput placeholder="Password"> </IonInput>
+            <IonLabel position="stacked">Password</IonLabel>
+            <IonInput placeholder="Enter your password"> </IonInput>
           </IonItem>
         </IonList>
     </IonThumbnail>
