@@ -1,11 +1,14 @@
-import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonHeader, IonIcon, IonList, IonItem, IonLabel, IonInput  } from '@ionic/react';
+import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonHeader, IonIcon, IonList, IonItem, IonLabel, IonInput, IonAlert  } from '@ionic/react';
 import './LogIn.css';
 import { arrowBack } from "ionicons/icons"
 import { logoFacebook } from "ionicons/icons"
 import { logoTwitter } from "ionicons/icons"
 import { logoGoogle } from "ionicons/icons"
+import React, {useState} from 'react';
 
 const LogIn: React.FC = () => {
+    const [showAlert, setShowAlert] = useState(false);
+
   return (
     <IonPage>
       <IonToolbar className="toolbar">
@@ -26,11 +29,19 @@ const LogIn: React.FC = () => {
           </IonItem>
         </IonList>
     </IonThumbnail>
-    <IonButton expand="full" className="login">Log in</IonButton>
+    <IonButton expand="block" className="login" onClick={() => setShowAlert(true)}>Log in</IonButton>
     <p>OR</p>
-    <IonButton expand="full" className="login"><IonIcon icon={logoFacebook}></IonIcon>Log in with Facebook</IonButton>
-    <IonButton expand="full" className="twitter"><IonIcon icon={logoTwitter}></IonIcon>Log in with Twitter</IonButton>
-    <IonButton expand="full" className="google"><IonIcon icon={logoGoogle}></IonIcon>Log in with Google</IonButton>
+    <IonButton expand="block" className="login" onClick={() => setShowAlert(true)}><IonIcon icon={logoFacebook}></IonIcon>Log in with Facebook</IonButton>
+    <IonButton expand="block" className="twitter" onClick={() => setShowAlert(true)}><IonIcon icon={logoTwitter}></IonIcon>Log in with Twitter</IonButton>
+    <IonButton expand="block" className="google" onClick={() => setShowAlert(true)}><IonIcon icon={logoGoogle}></IonIcon>Log in with Google</IonButton>
+    <IonAlert
+          isOpen={showAlert}
+          onDidDismiss={() => setShowAlert(false)}
+          cssClass='my-custom-class'
+          header={'Log in failed!'}
+          message={'Your login has failed. Check that your e-mail and password are correct. If you do not have an account, you must create one first.'}
+          buttons={['Continue']}
+        />
       </IonContent>
     </IonPage>
   );
