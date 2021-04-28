@@ -21,7 +21,7 @@ import {
           <IonHeader className="header">
           <IonIcon icon={arrowBack}></IonIcon>Book Example
           </IonHeader>
-          <IonCard>
+          <IonCard className="bookCard">
           <IonCardContent>
           <IonImg src={"assets/img/gothic.jpg"} />
           Sed ut perspiciatis, unde omnis iste natus error sit 
