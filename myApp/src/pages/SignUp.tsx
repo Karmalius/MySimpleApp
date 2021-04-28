@@ -1,4 +1,4 @@
-import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonHeader, IonIcon  } from '@ionic/react';
+import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonHeader, IonIcon, IonList, IonItem, IonLabel, IonInput  } from '@ionic/react';
 import './SignUp.css';
 import { arrowBack } from "ionicons/icons"
 
@@ -11,9 +11,19 @@ const SignUp: React.FC = () => {
         <IonHeader className="header">
             <IonIcon icon={arrowBack}></IonIcon>Sign up</IonHeader>
         <IonThumbnail>
-        <p>Here comes some text</p>
+        <IonList>
+        <IonItem className="input">
+            <IonLabel position="stacked">Name</IonLabel>
+            <IonInput placeholder="Enter your name here"></IonInput>
+          </IonItem>
+
+          <IonItem>
+            <IonLabel position="stacked">E-mail</IonLabel>
+            <IonInput placeholder="Enter your e-mail here"> </IonInput>
+          </IonItem>
+        </IonList>
     </IonThumbnail>
-      <IonButton expand="full" className="createnew">Create a new account</IonButton>
+      <IonButton size="small" className="createnew">Create a new account</IonButton>
       </IonContent>
     </IonPage>
   );
