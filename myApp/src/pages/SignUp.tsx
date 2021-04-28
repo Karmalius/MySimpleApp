@@ -16,10 +16,13 @@ const SignUp: React.FC = () => {
             <IonLabel position="stacked">Name</IonLabel>
             <IonInput placeholder="Enter your name here"></IonInput>
           </IonItem>
-
           <IonItem>
             <IonLabel position="stacked">E-mail</IonLabel>
             <IonInput placeholder="Enter your e-mail here"> </IonInput>
+          </IonItem>
+          <IonItem>
+            <IonLabel position="stacked">Password</IonLabel>
+            <IonInput placeholder="Create a new password"> </IonInput>
           </IonItem>
         </IonList>
     </IonThumbnail>
