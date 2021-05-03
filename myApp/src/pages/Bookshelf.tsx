@@ -10,26 +10,21 @@ import {
   IonMenuButton,
   IonButtons,
   IonTitle,
-
-
 } from "@ionic/react";
 import "./Bookshelf.css";
 import { addCircle } from "ionicons/icons";
-import { menuController } from '@ionic/core';
 
 const Bookshelf: React.FC = () => {
-
-  const onClickHandler = () => {
-    menuController.open() }
-
   return (
     <IonPage>
-      <IonToolbar className="toolbar"></IonToolbar>
       <IonContent fullscreen>
         <IonHeader className="header">
-          <IonButtons>
-        <IonMenuButton menu="sidemenu" autoHide={false} onClick={() => onClickHandler()} />
-        </IonButtons>
+
+  
+            <IonButtons>
+              <IonMenuButton menu="main" autoHide={false} />
+            </IonButtons>
+
         </IonHeader>
         <IonList>
           <IonItem routerLink="/Book">
