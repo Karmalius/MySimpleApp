@@ -29,3 +29,10 @@ ion-icon {
 .input {
     --padding-top: 50px;
 }
+
+.hide {
+    --background: transparent;
+    --border-color: none;
+    --box-shadow: none;
+    --size: 10px;
+}
