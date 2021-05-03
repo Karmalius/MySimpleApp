@@ -1,5 +1,5 @@
 .toolbar {
-    margin-bottom: 100px;
+
     --background: #B15D98;
     height: 25px;
 }
@@ -14,7 +14,8 @@
     margin: 3%;
 }
 
-ion-thumbnail {
+.pic {
+    margin-top: 100px;
     --size: 200px;
     margin-left: 13%;
 }
