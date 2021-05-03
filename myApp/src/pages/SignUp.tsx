@@ -27,7 +27,7 @@ const SignUp: React.FC = () => {
           </IonItem>
         </IonList>
     </IonThumbnail>
-      <IonButton size="small" className="createnew">Create a new account</IonButton>
+      <IonButton size="small" className="createnew" routerLink="/Bookshelf">Create a new account</IonButton>
       </IonContent>
     </IonPage>
   );
