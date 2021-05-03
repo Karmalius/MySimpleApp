@@ -7,22 +7,30 @@ import {
   IonList,
   IonItem,
   IonLabel,
+  IonMenuButton,
+  IonButtons,
+  IonTitle,
+
+
 } from "@ionic/react";
 import "./Bookshelf.css";
-import { menuOutline } from "ionicons/icons";
-import { searchOutline } from "ionicons/icons";
 import { addCircle } from "ionicons/icons";
+import { menuController } from '@ionic/core';
 
 const Bookshelf: React.FC = () => {
+
+  const onClickHandler = () => {
+    menuController.open() }
+
   return (
     <IonPage>
       <IonToolbar className="toolbar"></IonToolbar>
       <IonContent fullscreen>
         <IonHeader className="header">
-          <IonIcon icon={menuOutline} className="menu"></IonIcon>Bookshelf
-          <IonIcon icon={searchOutline} className="search"></IonIcon>
+          <IonButtons>
+        <IonMenuButton menu="sidemenu" autoHide={false} onClick={() => onClickHandler()} />
+        </IonButtons>
         </IonHeader>
-
         <IonList>
           <IonItem routerLink="/Book">
             <IonLabel>
