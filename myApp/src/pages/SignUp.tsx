@@ -9,8 +9,8 @@ const SignUp: React.FC = () => {
       </IonToolbar>
       <IonContent fullscreen>
         <IonHeader className="header">
-        <IonButton className="hide" routerLink="/Welcome">
-            <IonIcon icon={arrowBack}></IonIcon></IonButton>Sign up</IonHeader>
+        <IonButton className="hide" size="small" routerLink="/Welcome">
+            <IonIcon icon={arrowBack}></IonIcon>Sign up</IonButton></IonHeader>
         <IonThumbnail>
         <IonList>
         <IonItem className="input">
