@@ -1,5 +1,5 @@
 
-import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonImg,  } from '@ionic/react';
+import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonImg } from '@ionic/react';
 import './Welcome.css';
 
 const Welcome: React.FC = () => {
@@ -14,7 +14,7 @@ const Welcome: React.FC = () => {
         <IonImg src={"assets/img/logo.jpg"} />
     </IonThumbnail>
       <IonButton expand="full" className="login" routerLink="/LogIn">Log in</IonButton>
-      <IonButton expand="full" className="signup">Sign up</IonButton>
+      <IonButton expand="full" className="signup" routerLink="/SignUp">Sign up</IonButton>
       </IonContent>
     </IonPage>
   );
