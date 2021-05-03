@@ -23,3 +23,9 @@ ion-img {
     --background: #DF93C8;
     color: white;
 }
+.hide {
+    --background: transparent;
+    --border-color: none;
+    --box-shadow: none;
+    --size: 10px;
+}
