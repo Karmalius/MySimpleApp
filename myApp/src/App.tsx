@@ -4,6 +4,8 @@ import { IonReactRouter } from '@ionic/react-router';
 import Welcome from './pages/Welcome';
 import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
+import Bookshelf from './pages/Bookshelf';
+import Book from './pages/Book';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,6 +41,12 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/signup">
         <SignUp />
+        </Route>
+        <Route exact path="/bookshelf">
+        <Bookshelf />
+        </Route>
+        <Route exact path="/book">
+        <Book />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
