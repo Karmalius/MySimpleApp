@@ -51,3 +51,10 @@ p {
     --max-width: 80%;
     --background: #f8f1f7;
 }
+
+.hide {
+    --background: transparent;
+    --border-color: none;
+    --box-shadow: none;
+    --size: 10px;
+}
