@@ -20,8 +20,8 @@ import {
         <IonToolbar className="toolbar"></IonToolbar>
         <IonContent fullscreen>
           <IonHeader className="header">
-          <IonButton className="hide" routerLink="/Bookshelf">
-            <IonIcon icon={arrowBack}></IonIcon></IonButton>Book Example
+          <IonButton className="hide" size="small" routerLink="/Bookshelf">
+            <IonIcon icon={arrowBack}></IonIcon>Book Example</IonButton>
           </IonHeader>
           <IonCard className="bookCard">
           <IonCardContent>
