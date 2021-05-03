@@ -1,27 +1,11 @@
-import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonImg, IonRouterOutlet,  } from '@ionic/react';
-import { Redirect, Route } from 'react-router-dom';
+import { IonContent,IonPage, IonToolbar, IonButton, IonThumbnail, IonImg,  } from '@ionic/react';
 import './Welcome.css';
-import { IonReactRouter } from '@ionic/react-router';
-import LogIn from './LogIn';
 
-const directLogIn = () => {
-  return (
-  <IonReactRouter>
-    <IonRouterOutlet>
-      <Route exact path="/LogIn">
-        <LogIn />
-      </Route>
-      <Route exact path="/">
-        <Redirect to="/LogIn" />
-      </Route>
-    </IonRouterOutlet>
-  </IonReactRouter>
-  )
-}
+
 
 const Welcome: React.FC = () => {
 
-  
+  const onClickHandler = () => {};
 
   return (
     <IonPage>
@@ -32,7 +16,8 @@ const Welcome: React.FC = () => {
         <IonThumbnail>
         <IonImg src={"assets/img/logo.jpg"} />
     </IonThumbnail>
-      <IonButton expand="full" className="login" onClick={directLogIn}>Log in</IonButton>
+      <IonButton expand="full" className="login" routerLink="/LogIn"
+            onClick={() => onClickHandler()}>Log in</IonButton>
       <IonButton expand="full" className="signup">Sign up</IonButton>
       </IonContent>
     </IonPage>
