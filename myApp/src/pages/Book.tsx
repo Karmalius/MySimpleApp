@@ -7,19 +7,21 @@ import {
     IonCard,
     IonCardContent,
     IonImg,
+    IonButton
 
   } from "@ionic/react";
   import "./Book.css";
   import { arrowBack } from "ionicons/icons";
 
   
-  const Bookshelf: React.FC = () => {
+  const Book: React.FC = () => {
     return (
       <IonPage>
         <IonToolbar className="toolbar"></IonToolbar>
         <IonContent fullscreen>
           <IonHeader className="header">
-          <IonIcon icon={arrowBack}></IonIcon>Book Example
+          <IonButton className="hide" routerLink="/Bookshelf">
+            <IonIcon icon={arrowBack}></IonIcon></IonButton>Book Example
           </IonHeader>
           <IonCard className="bookCard">
           <IonCardContent>
@@ -34,5 +36,5 @@ import {
     );
   };
   
-  export default Bookshelf;
+  export default Book;
   
