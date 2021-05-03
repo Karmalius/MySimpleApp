@@ -24,7 +24,7 @@ const Bookshelf: React.FC = () => {
         </IonHeader>
 
         <IonList>
-          <IonItem>
+          <IonItem routerLink="/Book">
             <IonLabel>
               <h2>Book Example</h2>
               <p>Sed ut perspiciatis, unde omnis iste</p>
@@ -32,7 +32,7 @@ const Bookshelf: React.FC = () => {
               <p>accusantium dolorem..</p>
             </IonLabel>
           </IonItem>
-          <IonItem>
+          <IonItem routerLink="/Book">
             <IonLabel>
               <h2>Book Title</h2>
               <p>Sed ut perspiciatis, unde omnis iste</p>
@@ -40,7 +40,7 @@ const Bookshelf: React.FC = () => {
               <p>accusantium dolorem..</p>
             </IonLabel>
           </IonItem>
-          <IonItem>
+          <IonItem routerLink="/Book">
             <IonLabel>
               <h2>Book Title</h2>
               <p>Sed ut perspiciatis, unde omnis iste</p>
@@ -48,7 +48,7 @@ const Bookshelf: React.FC = () => {
               <p>accusantium dolorem..</p>
             </IonLabel>
           </IonItem>
-          <IonItem>
+          <IonItem routerLink="/Book">
             <IonLabel>
               <h2>Book Title</h2>
               <p>Sed ut perspiciatis, unde omnis iste</p>
