@@ -16,7 +16,8 @@ const LogIn: React.FC = () => {
       </IonToolbar>
       <IonContent fullscreen>
         <IonHeader className="header">
-            <IonIcon icon={arrowBack}></IonIcon>Log in to MyBookLibrary</IonHeader>
+          <IonButton routerLink="/Welcome">
+            <IonIcon icon={arrowBack}></IonIcon></IonButton>Log in to MyBookLibrary</IonHeader>
         <IonThumbnail>
         <IonList>
         <IonItem className="input">
