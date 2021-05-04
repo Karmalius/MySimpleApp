@@ -1,60 +1,60 @@
 .login {
-    --background: #B15D98;
-    margin: 3%;
-    font-size: 10px;
+  --background: #b15d98;
+  margin: 3%;
+  font-size: 10px;
 }
 
 .twitter {
-    --background: #CC6BAF;
-    margin: 3%;
-    font-size: 10px;
+  --background: #cc6baf;
+  margin: 3%;
+  font-size: 10px;
 }
 
 .google {
-    --background: #DF93C8;
-    margin: 3%;
-    font-size: 10px;
+  --background: #df93c8;
+  margin: 3%;
+  font-size: 10px;
 }
 
 .toolbar {
-    --background: #B15D98;
-    height: 25px;
+  --background: #b15d98;
+  height: 25px;
 }
 
 .header {
-    height: 50px;
-    background-color: #B15D98;
-    padding: 5%;
-    color: white;
-    font-size: 15px;
+  height: 50px;
+  background-color: #b15d98;
+  padding: 5%;
+  color: white;
+  font-size: 15px;
 }
 
 ion-thumbnail {
-    --size: 200px;
-    margin-left: 13%;
+  --size: 200px;
+  margin-left: 13%;
 }
 
 ion-icon {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .input {
-    --padding-top: 40px;
+  --padding-top: 40px;
 }
 
 p {
-    text-align: center;
-    font-size: 12px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .my-custom-class {
-    --max-width: 80%;
-    --background: #f8f1f7;
+  --max-width: 80%;
+  --background: #f8f1f7;
 }
 
 .hide {
-    --background: transparent;
-    --border-color: none;
-    --box-shadow: none;
-    --size: 10px;
+  --background: transparent;
+  --border-color: none;
+  --box-shadow: none;
+  --size: 10px;
 }

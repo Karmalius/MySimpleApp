@@ -1,38 +1,38 @@
 .toolbar {
-    --background: #B15D98;
-    height: 25px;
+  --background: #b15d98;
+  height: 25px;
 }
 
 .header {
-    height: 50px;
-    background-color: #B15D98;
-    padding: 5%;
-    color: white;
-    font-size: 15px;
+  height: 50px;
+  background-color: #b15d98;
+  padding: 5%;
+  color: white;
+  font-size: 15px;
 }
 
 .createnew {
-    --background: #B15D98;
-    margin: 10%;
-    margin-top: 70px;
+  --background: #b15d98;
+  margin: 10%;
+  margin-top: 70px;
 }
 
 ion-thumbnail {
-    --size: 200px;
-    margin-left: 13%;
+  --size: 200px;
+  margin-left: 13%;
 }
 
 ion-icon {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .input {
-    --padding-top: 50px;
+  --padding-top: 50px;
 }
 
 .hide {
-    --background: transparent;
-    --border-color: none;
-    --box-shadow: none;
-    --size: 10px;
+  --background: transparent;
+  --border-color: none;
+  --box-shadow: none;
+  --size: 10px;
 }

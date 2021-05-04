@@ -1,31 +1,32 @@
 ion-icon {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .toolbar {
-    --background: #B15D98;
-    height: 25px;
+  --background: #b15d98;
+  height: 25px;
 }
 
 .header {
-    height: 50px;
-    background-color: #B15D98;
-    padding: 5%;
-    color: white;
-    font-size: 15px;
+  height: 50px;
+  background-color: #b15d98;
+  padding: 5%;
+  color: white;
+  font-size: 15px;
 }
 
 ion-img {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .bookCard {
-    --background: #DF93C8;
-    color: white;
+  --background: #df93c8;
+  color: white;
 }
+
 .hide {
-    --background: transparent;
-    --border-color: none;
-    --box-shadow: none;
-    --size: 10px;
+  --background: transparent;
+  --border-color: none;
+  --box-shadow: none;
+  --size: 10px;
 }
