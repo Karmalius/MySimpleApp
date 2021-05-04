@@ -61,6 +61,13 @@ const Menu: React.FC = (props) => {
                 </IonButton>
               </IonButtons>
             </IonItem>
+            <IonItem>
+              <IonButtons>
+                <IonButton routerLink="/Welcome" onClick={() => onClickHandler()}>
+                  Log out
+                </IonButton>
+              </IonButtons>
+            </IonItem>
           </IonList>
         </IonContent>
       </IonMenu>
