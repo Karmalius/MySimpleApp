@@ -11,7 +11,9 @@ import {
   IonLabel,
   IonButton,
 } from "@ionic/react";
+
 import { menuController } from "@ionic/core";
+import "./Menu.css";
 
 const Menu: React.FC = (props) => {
   // Create a click handler to close the menu
@@ -31,39 +33,48 @@ const Menu: React.FC = (props) => {
         hidden={false}
         type="overlay"
       >
-        <IonHeader className="header">
-          <IonToolbar>
-            <IonItem lines="none">
-              <IonButtons>
-                <IonMenuButton
-                color="light"
-                  autoHide={true}
-                  onClick={() => onClickHandler()}
-                ></IonMenuButton>
-              </IonButtons>
-              <IonLabel color="light">Menu</IonLabel>
-            </IonItem>
-          </IonToolbar>
-        </IonHeader>
+        <IonToolbar className="toolbar"></IonToolbar>
         <IonContent>
+          <IonHeader className="header">
+            <IonToolbar>
+              <IonItem lines="none">
+                <IonButtons>
+                  <IonMenuButton
+                    autoHide={true}
+                    onClick={() => onClickHandler()}
+                  ></IonMenuButton>
+                </IonButtons>
+                <IonLabel>Menu</IonLabel>
+              </IonItem>
+            </IonToolbar>
+          </IonHeader>
           <IonList lines="none">
             <IonItem>
               <IonButtons>
-                <IonButton routerLink="/Bookshelf" onClick={() => onClickHandler()}>
+                <IonButton
+                  routerLink="/Bookshelf"
+                  onClick={() => onClickHandler()}
+                >
                   Bookself
                 </IonButton>
               </IonButtons>
             </IonItem>
             <IonItem>
               <IonButtons>
-                <IonButton routerLink="/Account" onClick={() => onClickHandler()}>
+                <IonButton
+                  routerLink="/Account"
+                  onClick={() => onClickHandler()}
+                >
                   Account
                 </IonButton>
               </IonButtons>
             </IonItem>
             <IonItem>
               <IonButtons>
-                <IonButton routerLink="/Welcome" onClick={() => onClickHandler()}>
+                <IonButton
+                  routerLink="/Welcome"
+                  onClick={() => onClickHandler()}
+                >
                   Log out
                 </IonButton>
               </IonButtons>
