@@ -1,7 +1,6 @@
 import {
   IonContent,
   IonPage,
-  IonToolbar,
   IonHeader,
   IonIcon,
   IonList,
@@ -9,7 +8,7 @@ import {
   IonLabel,
   IonMenuButton,
   IonButtons,
-  IonTitle,
+
 } from "@ionic/react";
 import "./Bookshelf.css";
 import { addCircle } from "ionicons/icons";
@@ -19,12 +18,9 @@ const Bookshelf: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <IonHeader className="header">
-
-  
-            <IonButtons>
-              <IonMenuButton menu="main" autoHide={false} />
-            </IonButtons>
-
+          <IonButtons>
+            <IonMenuButton menu="menu" autoHide={false} />
+          </IonButtons>
         </IonHeader>
         <IonList>
           <IonItem routerLink="/Book">
