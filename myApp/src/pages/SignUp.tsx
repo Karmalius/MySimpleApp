@@ -1,3 +1,4 @@
+// Importing components used on this page.
 import {
   IonContent,
   IonPage,
@@ -12,9 +13,15 @@ import {
   IonInput,
 } from "@ionic/react";
 
+// Importing stylesheet
 import "./SignUp.css";
+
+// Importing icon used on this page
 import { arrowBack } from "ionicons/icons";
 
+// SignUp page has a button with icon that navigates back to welcome page.
+// There is also list with input fiels and a button that navigates to bookshelf page.
+// There is not any function to actually create an account.
 const SignUp: React.FC = () => {
   return (
     <IonPage>

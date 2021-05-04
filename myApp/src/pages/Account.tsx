@@ -1,3 +1,4 @@
+// Importing components used on this page.
 import {
   IonContent,
   IonPage,
@@ -18,8 +19,12 @@ import {
   IonTitle,
 } from "@ionic/react";
 
+// Importing stylesheet
 import "./Account.css";
 
+// Account page has menu button that opens menu page.
+// It also has card containing avatar, button, labels and checkboxes.
+// Components on this page are not in use exept the menu button.
 const Account: React.FC = () => {
   return (
     <IonPage>

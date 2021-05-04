@@ -1,4 +1,5 @@
 import React from "react";
+// Importing components used on this page.
 import {
   IonMenu,
   IonHeader,
@@ -12,15 +13,19 @@ import {
   IonButton,
 } from "@ionic/react";
 
+// Importing menucontroller that is used to control the menu
 import { menuController } from "@ionic/core";
+// Importing stylesheet
 import "./Menu.css";
 
 const Menu: React.FC = (props) => {
-  // Create a click handler to close the menu
+// Creating onclickhandler to close the menu
   const onClickHandler = (): void => {
     menuController.close();
   };
 
+  // The menu page has buttons that navigate to Bookself, Account and Welcome pages.
+  // The log out button does not log out. It just redirects us to welcome page because there is no option to log in.
   return (
     <>
       <IonMenu

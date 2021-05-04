@@ -1,3 +1,4 @@
+// Importing components used on this page.
 import {
   IonContent,
   IonPage,
@@ -10,9 +11,14 @@ import {
   IonButton,
 } from "@ionic/react";
 
+// Importing stylesheet
 import "./Book.css";
+
+// Importing an icon used on this page.
 import { arrowBack } from "ionicons/icons";
 
+// Book page has a button with icon that navigates back to Bookshelf page.
+// It also has a card containing an image and text content.
 const Book: React.FC = () => {
   return (
     <IonPage>

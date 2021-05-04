@@ -1,3 +1,4 @@
+// Importing components used on this page.
 import {
   IonContent,
   IonPage,
@@ -7,8 +8,11 @@ import {
   IonImg,
 } from "@ionic/react";
 
+// Importing stylesheet
 import "./Welcome.css";
 
+// Welcome page has thumbnail with image and two buttons.
+// Buttons use routerLink to navigate to another pages.
 const Welcome: React.FC = () => {
   return (
     <IonPage>

@@ -1,3 +1,4 @@
+// Importing components used on this page.
 import {
   IonContent,
   IonPage,
@@ -11,9 +12,14 @@ import {
   IonTitle,
 } from "@ionic/react";
 
+// Importing stylesheet
 import "./Bookshelf.css";
+
+// Importing an icon used on this page.
 import { addCircle } from "ionicons/icons";
 
+// Bookhelf page has menu button that opens menu page.
+// It also has list with items. When items are clicked they navigate to the Book page.
 const Bookshelf: React.FC = () => {
   return (
     <IonPage>

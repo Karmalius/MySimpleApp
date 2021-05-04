@@ -1,3 +1,4 @@
+// Importing components used on this page.
 import {
   IonContent,
   IonPage,
@@ -13,17 +14,26 @@ import {
   IonLabel,
 } from "@ionic/react";
 
+// Importing stylesheet
 import "./LogIn.css";
+
+// Importing icons used on this page.
 import { arrowBack } from "ionicons/icons";
 import { logoFacebook } from "ionicons/icons";
 import { logoTwitter } from "ionicons/icons";
 import { logoGoogle } from "ionicons/icons";
+
+// Importing useState.
 import React, { useState } from "react";
 
 const LogIn: React.FC = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [showAlert2, setShowAlert2] = useState(false);
 
+  // Log in page has a button with icon that navigates back to welcome page.
+  // It also has list with input fiels and buttons.
+  // When buttons are clicked they show an alert.
+  // There is not any function to actually log in.
   return (
     <IonPage>
       <IonToolbar className="toolbar"></IonToolbar>
