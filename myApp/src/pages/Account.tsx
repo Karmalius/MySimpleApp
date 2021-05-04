@@ -15,6 +15,7 @@ import {
   IonRow,
   IonButtons,
   IonMenuButton,
+  IonTitle,
 } from "@ionic/react";
 
 import "./Account.css";
@@ -27,6 +28,7 @@ const Account: React.FC = () => {
         <IonHeader className="header">
           <IonButtons>
             <IonMenuButton menu="menu" autoHide={false} />
+            <IonTitle>Account</IonTitle>
           </IonButtons>
         </IonHeader>
         <IonCard className="profile">

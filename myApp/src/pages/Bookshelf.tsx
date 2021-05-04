@@ -8,6 +8,7 @@ import {
   IonLabel,
   IonMenuButton,
   IonButtons,
+  IonTitle,
 } from "@ionic/react";
 
 import "./Bookshelf.css";
@@ -20,7 +21,9 @@ const Bookshelf: React.FC = () => {
         <IonHeader className="header">
           <IonButtons>
             <IonMenuButton menu="menu" autoHide={false} />
+            <IonTitle>Bookshelf</IonTitle>
           </IonButtons>
+        
         </IonHeader>
         <IonList>
           <IonItem routerLink="/Book">
