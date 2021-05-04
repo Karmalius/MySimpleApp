@@ -2,11 +2,6 @@ ion-icon {
   margin-right: 20px;
 }
 
-.toolbar {
-  --background: #b15d98;
-  height: 25px;
-}
-
 .header {
   height: 50px;
   background-color: #b15d98;
