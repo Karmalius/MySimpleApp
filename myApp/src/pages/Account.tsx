@@ -14,6 +14,9 @@ import {
     IonLabel,
     IonCheckbox,
     IonRow,
+    IonButtons,
+    IonMenuButton,
+
 
 
   } from "@ionic/react";
@@ -26,9 +29,11 @@ import {
       <IonPage>
         <IonToolbar className="toolbar"></IonToolbar>
         <IonContent fullscreen>
-          <IonHeader className="header">
-          <IonIcon icon={menuOutline}></IonIcon>Account
-          </IonHeader>
+        <IonHeader className="header">
+          <IonButtons>
+            <IonMenuButton menu="menu" autoHide={false} />
+          </IonButtons>
+        </IonHeader>
           <IonCard className="profile">
           <IonCardContent>
               <IonAvatar>
