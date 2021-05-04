@@ -1,48 +1,45 @@
 import {
-    IonContent,
-    IonPage,
-    IonToolbar,
-    IonHeader,
-    IonIcon,
-    IonCard,
-    IonImg,
-    IonCardContent,
-    IonButton,
-    IonAvatar,
-    IonList,
-    IonItem,
-    IonLabel,
-    IonCheckbox,
-    IonRow,
-    IonButtons,
-    IonMenuButton,
+  IonContent,
+  IonPage,
+  IonToolbar,
+  IonHeader,
+  IonCard,
+  IonImg,
+  IonCardContent,
+  IonButton,
+  IonAvatar,
+  IonList,
+  IonItem,
+  IonLabel,
+  IonCheckbox,
+  IonRow,
+  IonButtons,
+  IonMenuButton,
+} from "@ionic/react";
 
+import "./Account.css";
 
-
-  } from "@ionic/react";
-  import "./Account.css";
-  import { menuOutline } from "ionicons/icons";
-
-  
-  const Account: React.FC = () => {
-    return (
-      <IonPage>
-        <IonToolbar className="toolbar"></IonToolbar>
-        <IonContent fullscreen>
+const Account: React.FC = () => {
+  return (
+    <IonPage>
+      <IonToolbar className="toolbar"></IonToolbar>
+      <IonContent fullscreen>
         <IonHeader className="header">
           <IonButtons>
             <IonMenuButton menu="menu" autoHide={false} />
           </IonButtons>
         </IonHeader>
-          <IonCard className="profile">
+        <IonCard className="profile">
           <IonCardContent>
-              <IonAvatar>
-          <IonImg src={"assets/img/profile.png"} />
-          </IonAvatar>
-          <IonButton size="small" className="addpicture">Add profile picture</IonButton>
-      </IonCardContent>
-          </IonCard>
-          <IonList lines="none">
+            <IonAvatar>
+              <IonImg src={"assets/img/profile.png"} />
+            </IonAvatar>
+            <IonButton size="small" className="addpicture">
+              Add profile picture
+            </IonButton>
+          </IonCardContent>
+        </IonCard>
+        <IonList lines="none">
           <IonItem>
             <IonLabel>
               <h2>Name</h2>
@@ -61,18 +58,21 @@ import {
             </IonLabel>
           </IonItem>
           <IonRow>
-            <IonCheckbox checked/><IonLabel className="color">Purple</IonLabel>
+            <IonCheckbox checked />
+            <IonLabel className="color">Purple</IonLabel>
           </IonRow>
           <IonRow>
-            <IonCheckbox/><IonLabel className="color">Green</IonLabel>
+            <IonCheckbox />
+            <IonLabel className="color">Green</IonLabel>
           </IonRow>
           <IonRow>
-            <IonCheckbox/><IonLabel className="color">Black</IonLabel>
+            <IonCheckbox />
+            <IonLabel className="color">Black</IonLabel>
           </IonRow>
         </IonList>
-        </IonContent>
-      </IonPage>
-    );
-  };
-  
-  export default Account;
+      </IonContent>
+    </IonPage>
+  );
+};
+
+export default Account;
