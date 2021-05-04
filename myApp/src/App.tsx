@@ -6,6 +6,7 @@ import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import Bookshelf from "./pages/Bookshelf";
 import Book from "./pages/Book";
+import Account from "./pages/Account";
 import Menu from "./components/Menu";
 
 import "@ionic/react/css/core.css";
@@ -33,6 +34,9 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/book">
             <Book />
+          </Route>
+          <Route exact path="/account">
+            <Account />
           </Route>
         </IonRouterOutlet>
       </IonSplitPane>
